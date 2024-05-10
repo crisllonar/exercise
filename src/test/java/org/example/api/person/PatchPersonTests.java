@@ -24,9 +24,10 @@ public class PatchPersonTests extends BaseApiTest {
     private static final List<String> personIdList = new ArrayList<>();
 
     @AfterClass
-    public void afterClassTearDown() {
+    public void afterClassTearDown() throws InterruptedException {
         for (String personId : personIdList) {
             deletePersonRequest(personId);
+            Thread.sleep(2000);
         }
     }
 
