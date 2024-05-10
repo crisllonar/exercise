@@ -8,8 +8,6 @@ import java.util.List;
 @Builder(toBuilder = true)
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class PatchPersonPayload {
 
     @JsonProperty("first_name")

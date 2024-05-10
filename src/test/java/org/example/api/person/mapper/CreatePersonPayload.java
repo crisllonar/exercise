@@ -9,8 +9,6 @@ import java.util.List;
 @Builder(toBuilder = true)
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class CreatePersonPayload {
 
     private String email;
