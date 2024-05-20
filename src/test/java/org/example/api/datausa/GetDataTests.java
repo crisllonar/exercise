@@ -63,7 +63,7 @@ public class GetDataTests  extends BaseApiTest {
      */
 
     @Test(testName = "GET get data by param: drilldowns")
-    public void positiveGetDataByParamsDrilldowns()  {
+    public void negativeGetDataByParamsDrilldowns()  {
 
         Map<String, Object> queryParams = new HashMap<>();
         queryParams.put("drilldowns","State");
@@ -77,7 +77,7 @@ public class GetDataTests  extends BaseApiTest {
     }
 
     @Test(testName = "GET get data by param: year")
-    public void positiveGetDataByParamsYear()  {
+    public void negativeGetDataByParamsYear()  {
 
         Map<String, Object> queryParams = new HashMap<>();
         queryParams.put("year","latest");
@@ -91,7 +91,7 @@ public class GetDataTests  extends BaseApiTest {
     }
 
     @Test(testName = "GET get data by invalid values params")
-    public void positiveGetDataByInvalidValuesParams()  {
+    public void negativeGetDataByInvalidValuesParams()  {
 
         Map<String, Object> queryParams = new HashMap<>();
         queryParams.put("drilldowns","234234");
