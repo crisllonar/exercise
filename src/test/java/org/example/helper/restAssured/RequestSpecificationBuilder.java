@@ -16,17 +16,11 @@ public class RequestSpecificationBuilder extends RequestSpecBuilder {
         return requestSpecificationBuilder
                 .setBaseURI(baseUrl)
                 .addRequestLoggingFilter()
-                .addResponseLoggingFilter()
-                .setContentTypeHeaderJSON();
+                .addResponseLoggingFilter();
     }
 
     private RequestSpecificationBuilder setBaseURI(String uri) {
         this.setBaseUri(uri);
-        return this;
-    }
-
-    private RequestSpecificationBuilder setContentTypeHeaderJSON() {
-        this.setContentType(ContentType.JSON);
         return this;
     }
 
